@@ -1,0 +1,291 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*...........................................website header................................................... */
+.navbar {
+    box-shadow: -1px 1px 6px black;
+}
+
+
+/*...........................................website main................................................... */
+
+/*  whatsapp-icon  */
+.whatsapp-button {
+    position: fixed;
+    bottom: 170px;
+    right: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 15px rgb(0, 0, 0);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.whatsapp-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.whatsapp-button:hover .whatsapp-icon {
+    transform: scale(1.2);
+    box-shadow: 0 0px 15px rgb(255, 0, 0);
+}
+
+.whatsapp-button:focus .whatsapp-icon {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(38, 198, 218, 0.6);
+}
+
+/*  whatsapp-icon  */
+.bgImage {
+    background-image: url("6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-image: fill 0 linear-gradient(#0001, #000000c3);
+}
+
+.bgImage .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    padding-right: 39%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+
+}
+
+.cards .cardsText2 {
+    color: black;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+
+    padding: 5px 10px 20px 10px;
+}
+
+.cards .cardsText1 {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 10px 5px 10px;
+
+}
+
+main .cards2 {
+    height: 50vh;
+    background-color: rgb(241, 241, 241);
+    padding: 30px 10px 50px 10px;
+    margin: 50px 10px 50px 10px;
+}
+
+main .cards2 .card {
+    transition: 0.5s;
+}
+
+main .cards2 .card:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+.cards .row .col .card {
+    transition: 0.5s;
+
+}
+
+.cards .row .col:hover .card {
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/*...........................................website footer................................................... */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    padding: 40px 50px;
+    color: #ecf0f1;
+    margin-top: 40px;
+}
+
+.footer div {
+    flex: 1;
+    min-width: 220px;
+    margin: 20px;
+}
+
+.footer .contact-info img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer .contact-info p,
+.footer .information p,
+.footer .useful-links p {
+    margin: 10px 0;
+    color: #bdc3c7;
+}
+
+.footer .information h3,
+.footer .useful-links h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ecf0f1;
+}
+
+.footer a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0dcaf0;
+}
+
+.footer .icon {
+    margin-right: 10px;
+}
+
+.footer .social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer .social-icons a {
+    margin-right: 15px;
+    color: #ecf0f1;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #0dcaf0;
+}
+
+
+
+
+
+
+
+
+/*...........................................Media query................................................... */
+@media only screen and (max-width: 575.98px) {
+    .navItem {
+        display: inline-flex;
+        flex-direction: row;
+
+
+
+    }
+
+    .navItem .zero {
+        margin-left: 7px;
+
+    }
+
+    .bgImage .text {
+
+        gap: 0.5rem;
+        padding: 5%;
+        padding-left: 10%;
+        color: white;
+
+    }
+
+    main .cards2 {
+        height: 70vh;
+    }
+
+    /*  whatsapp-icon  */
+    .whatsapp-button {
+        bottom: 160px;
+        right: 10px;
+    }
+
+    .whatsapp-icon {
+        width: 45px;
+        height: 45px;
+        box-shadow: 0 0px 8px rgb(0, 0, 0);
+    }
+
+    .whatsapp-icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .whatsapp-button:hover .whatsapp-icon {
+        box-shadow: 0 0px 10px rgb(255, 0, 0);
+    }
+
+    .whatsapp-button:focus .whatsapp-icon {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(38, 198, 218, 0.6);
+    }
+
+    /*  whatsapp-icon  */
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .navItem {
+        display: inline-flex;
+        flex-direction: row;
+
+
+    }
+
+    .navItem .zero {
+        margin-left: 7px;
+    }
+
+    main .cards2 {
+        height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .navItem {
+        display: inline-flex;
+        flex-direction: row;
+
+
+    }
+
+    .navItem .zero {
+        margin-left: 7px;
+    }
+
+}
